@@ -1,0 +1,10 @@
+__pycache__/
+
+venv/
+
+*.sqlite3 # Ignora arquivos SQLite de desenvolvimento
+.env      # Arquivos de variáveis de ambiente
+.vscode/  # (Opcional) Arquivos de configuração do VS Code
+
+/static
+/media
