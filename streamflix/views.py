@@ -43,7 +43,14 @@ def login(request):
         "refresh": str(refresh),
         "user_id": user.id
     })
-    
+
+
+# --------- LOGOUT ---------
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def logout(request):
+    return Response({"message": "Logout realizado com sucesso"}, status=200)
+
 
 # -------------------------
 # FILMES
